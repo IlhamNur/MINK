@@ -26,12 +26,12 @@ if(mysqli_num_rows($result) === 1) {
         $_SESSION['email'] = $row['email'];
         $_SESSION['name'] = $row['name'];
         $_SESSION['id'] = $row['id'];
-        header("Location: index.php");
+        header("Location: dash.php");
         exit();
     }
 }
 
 else {
-    header("Location: signform.php");
+    header("Location: index.php");
     exit();
 }
