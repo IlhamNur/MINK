@@ -126,9 +126,9 @@ Author URL: http://w3layouts.com
                     frameborder="0" allowfullscreen=""></iframe>
             </div> -->
           <div class="col-lg-6 form-inner-cont mt-lg-0 mt-sm-5 mt-4">
-            <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+            <form action="login.php" method="post" class="signin-form">
               <div class="form-input">
-                <input type="email" name="w3lSender" id="w3lSender" placeholder="Email Anda" required="" />
+                <input type="email" name="email" id="w3lSender" placeholder="Email Anda" required="" />
               </div>
               <div class="form-input">
                 <input type="password" name="password" id="w3lPassword" placeholder="Password Anda" required="" />
