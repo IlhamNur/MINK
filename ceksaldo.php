@@ -21,11 +21,10 @@ Author URL: http://w3layouts.com
 <header id="site-header" class="fixed-top">
   <div class="container">
       <nav class="navbar navbar-expand-lg stroke px-0">
-        <h1> <a class="navbar-brand" href="index.html">
+        <h1> <a class="navbar-brand" href="index.php">
           <span><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px; padding-right: 5px; padding-bottom: 8px;" /></span> 
           MINK
       </a></h1>  
-
           <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
               data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -36,23 +35,23 @@ Author URL: http://w3layouts.com
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item @@home__active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item @@about__active">
-                      <a class="nav-link" href="about.html">About</a>
+                      <a class="nav-link" href="about.php">About</a>
                   </li>
                   <li class="nav-item @@services__active">
-                      <a class="nav-link" href="services.html">Services</a>
+                      <a class="nav-link" href="services.php">Services</a>
                   </li>
                   <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Login/Signup</a>
+                      <a class="nav-link" href="signform.php">Login/Signup</a>
                   </li>
                   <!--/search-right-->
                   <div class="search mr-3">
                       <input class="search_box" type="checkbox" id="search_box">
                       <label class="fa fa-search" for="search_box"></label>
                       <div class="search_form">
-                          <form action="error.html" method="GET">
+                          <form action="error.php" method="GET">
                               <input type="text" placeholder="Search"><input type="submit" value="search">
                           </form>
                       </div>
@@ -84,77 +83,36 @@ Author URL: http://w3layouts.com
 <section class="w3l-breadcrumb">
     <div class="container">
         <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Log In / Sign Up</li>
+            <li><a href="services.php">Services</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Cek Saldo</li>
         </ul>
     </div>
 </section>
 <div class="w3l-contact-info py-5" id="contact">
     <div class="container py-lg-5 py-md-4">
         <div class="title text-center">
-            <h3 class="title-big">Sign Up</h3>
-            <p class="mt-2 mx-lg-5">Buatlah akun untuk mendapatkan pengalaman yang terbaik.</p>
+            <h3 class="title-big">Cek Saldo Anda Dimana Saja Kapan Saja </h3>
+            <p class="mt-2 mx-lg-5">Kini mengecek saldo semudah membalikkan telapak tangan</p>
         </div>
-        <!-- <div class="row">
-            <div class="col-lg-6">
+        <div class="row">
+            <!-- <div class="col-lg-6">
             </div>
             <div class="align-self mt-lg-0 mt-md-5 mt-4">
-                <div class="contact-infos">
-                    <div class="single-contact-infos">
-                        <div class="icon-box"> <span class="fa fa-map-marker"></span></div>
-                        <div class="text-box">
-                            <h3 class="mb-1">Address info</h3>
-                            <p>Bank Card, 343 banking lane, #2214 cravel street, NY.</p>
-                        </div>
-                    </div>
-                    <div class="single-contact-infos">
-                        <div class="icon-box"> <span class="fa fa-phone"></span></div>
-                        <div class="text-box">
-                            <h3 class="mb-1">Call us on</h3>
-                            <p><a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></p>
-                        </div>
-                    </div>
-                    <div class="single-contact-infos">
-                        <div class="icon-box"> <span class="fa fa-envelope"></span></div>
-                        <div class="text-box">
-                            <h3 class="mb-1">Email us</h3>
-                            <p> <a href="mailto:info@support.com">info@support.com</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="row mt-5 " >
-            <!-- <div class="col-lg-6 map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001161.424489281!2d-78.01909140705047!3d42.72866436845163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1570786994395!5m2!1sen!2sin"
-                    frameborder="0" allowfullscreen=""></iframe>
             </div> -->
-            <div class="col-lg-6 form-inner-cont mt-lg-0 mt-sm-5 mt-4" >
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 form-inner-cont mt-lg-0 mt-sm-5 mt-4">
                 <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                    <!-- <h4><strong>Cek Saldo</strong></h4> -->
                     <div class="form-input">
-                        <input type="text" name="w3lName" id="w3lName" placeholder="Nama lengkap Anda" required="">
+                        <input type="text" name="Nomor Kartu" id="w3lName" placeholder="Nomor Kartu">
                     </div>
                     <div class="form-input">
-                      <textarea type="text" name="w3lAddress" id="w3lAddress" placeholder="Alamat tinggal Anda" required=""></textarea>
-                    </div>
-                    <div class="form-input">
-                      <input type="number" name="w3lHP" id="w3lHP" placeholder="Nomor handphone Anda" required="">
-                    </div>
-                    <div class="form-input">
-                      <input type="number" name="w3lRekening" id="w3lRekening" placeholder="Nomor kartu bank Anda" required="">
-                    </div>
-                    <div class="form-input">
-                        <input type="email" name="w3lSender" id="w3lSender" placeholder="Email Anda" required="">
-                    </div>
-                    <div class="form-input">
-                        <input type="password" name="password" id="w3lPassword" placeholder="Password Anda" required="">
-                    </div>
-                    <div class="form-input">
-                      <input type="text" name="w3lMother" id="w3lMother" placeholder="Nama ibu kandung Anda" required="">
-                    </div>
+                        <input type="password" name="PIN" id="w3lSender" placeholder="PIN"
+                            required="">
+                    </div> 
                     <div class="text-right">
-                        <button type="submit" class="btn btn-style btn-primary">Sign Up</button>
+                        <button type="submit" class="btn btn-style btn-primary">Cek Saldo</button>
                     </div>
                 </form>
             </div>
@@ -168,7 +126,7 @@ Author URL: http://w3layouts.com
       <div class="row footer-top-29">
         <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pr-lg-5">
           <div class="footer-logo mb-4">
-            <a class="navbar-brand" href="#index.html"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
+            <a class="navbar-brand" href="#index.php"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
           </div>
           <p>Kami adalah lembaga keuangan terkemuka yang menyediakan layanan perbankan berskala nasional berkualitas tinggi. Kesuksesan kami
             terwujud berkat dukungan dari pelanggan setia kami. Kami menyediakan layanan yang dapat diandalkan untuk Anda.</p>
@@ -177,11 +135,11 @@ Author URL: http://w3layouts.com
 
           <ul>
             <h6 class="footer-title-29">Quick Links</h6>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.php">About Us</a></li>
             <!-- <li><a href="#blog"> Blog posts</a></li>
             <li><a href="#pricing"> Pricing plans</a></li> -->
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="contact.php">Contact us</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-7 col-7 footer-list-29 footer-3 mt-lg-0 mt-5">

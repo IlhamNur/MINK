@@ -22,7 +22,7 @@ Author URL: http://w3layouts.com
 <header id="site-header" class="fixed-top">
   <div class="container">
       <nav class="navbar navbar-expand-lg stroke px-0">
-          <h1> <a class="navbar-brand" href="index.html">
+          <h1> <a class="navbar-brand" href="index.php">
                   <span><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px; padding-right: 5px; padding-bottom: 8px;" /></span> 
                   MINK
               </a></h1>  
@@ -37,23 +37,23 @@ Author URL: http://w3layouts.com
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item @@about__active">
-                      <a class="nav-link" href="about.html">About</a>
+                      <a class="nav-link" href="about.php">About</a>
                   </li>
                   <li class="nav-item @@services__active">
-                      <a class="nav-link" href="services.html">Services</a>
+                      <a class="nav-link" href="services.php">Services</a>
                   </li>
                   <li class="nav-item @@contact__active">
-                      <a class="nav-link" href="signform.html">Login/Signup</a>
+                      <a class="nav-link" href="signform.php">Login/Signup</a>
                   </li>
                   <!--/search-right-->
                   <div class="search mr-3">
                       <input class="search_box" type="checkbox" id="search_box">
                       <label class="fa fa-search" for="search_box"></label>
                       <div class="search_form">
-                          <form action="error.html" method="GET">
+                          <form action="error.php" method="GET">
                               <input type="text" placeholder="Search"><input type="submit" value="search">
                           </form>
                       </div>
@@ -95,8 +95,8 @@ Author URL: http://w3layouts.com
                                         <p class="mt-md-4 mt-3">MINK (Mini Bank) adalah bank swasta yang didirikan pada tahun 2022.
                                             Menyediakan segala layanan perbankan untuk memuaskan para pelanggan.
                                         </p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.html">Sign in </a>
-                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.html">About Us</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in </a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">About Us</a>
                                     </div>
                                     <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
                                         <img src="assets/images/card1.png" alt="img"
@@ -117,8 +117,8 @@ Author URL: http://w3layouts.com
                                     <div class="col-lg-6 banner-info-bg">
                                         <h5>Transfer kemanapun</h5>
                                         <p class="mt-md-4 mt-3"> MINK memudahkan kalian untuk melakukan transfer kemanapun dan kapanpun.</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.html">Sign in</a>
-                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.html">About Us</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">About Us</a>
                                     </div>
                                     <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
                                         <img src="assets/images/card2.png" alt="img"
@@ -139,8 +139,8 @@ Author URL: http://w3layouts.com
                                     <div class="col-lg-6 banner-info-bg">
                                         <h5>Kustomisasi akunmu </h5>
                                         <p class="mt-md-4 mt-3">Log in ke akun anda untuk mengubah username maupun pin</p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.html">Sign in</a>
-                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.html">About Us</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">About Us</a>
                                     </div>
                                     <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
                                         <img src="assets/images/card3.png" alt="img"
@@ -164,8 +164,8 @@ Author URL: http://w3layouts.com
                                             kemudahan mendapatkan informasi, melakukan transaksi dan memperoleh solusi 
                                             digital atas setiap permasalahan.
                                         </p>
-                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.html">Sign in</a>
-                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.html">Read More</a>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">Read More</a>
                                     </div>
                                     <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
                                         <img src="assets/images/card4.png" alt="img"
@@ -246,7 +246,7 @@ Author URL: http://w3layouts.com
                         ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
                         elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
                         dolor sit, amet elit. Dolor ipsum non velit, culpa! Vivamus a et ut justo, init in dolor et.</p>
-                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Learn More</a>
+                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.php"> Learn More</a>
                 </div>
                 <div class="col-lg-5">
                     <div class="position-relative">
@@ -494,7 +494,7 @@ Author URL: http://w3layouts.com
                  <h4 class="title-big">Buat akunmu sekarang!</h4>
              </div>
              <div class="col-lg-5 mt-lg-0 mt-4">
-                 <a class="btn btn-style btn-dark" href="signform.html"> Buka rekening</a>
+                 <a class="btn btn-style btn-dark" href="signform.php"> Buka rekening</a>
              </div>
          </div>
      </div>
@@ -605,7 +605,7 @@ Author URL: http://w3layouts.com
         <div class="row footer-top-29">
           <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pr-lg-5">
             <div class="footer-logo mb-4">
-              <a class="navbar-brand" href="#index.html"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
+              <a class="navbar-brand" href="#index.php"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
             </div>
             <p>Kami adalah lembaga keuangan terkemuka yang menyediakan layanan perbankan berskala nasional berkualitas tinggi. Kesuksesan kami
               terwujud berkat dukungan dari pelanggan setia kami. Kami menyediakan layanan yang dapat diandalkan untuk Anda.</p>
@@ -614,11 +614,11 @@ Author URL: http://w3layouts.com
   
             <ul>
               <h6 class="footer-title-29">Quick Links</h6>
-              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.php">About Us</a></li>
               <!-- <li><a href="#blog"> Blog posts</a></li>
               <li><a href="#pricing"> Pricing plans</a></li> -->
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="services.php">Services</a></li>
+              <li><a href="contact.php">Contact us</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-7 col-7 footer-list-29 footer-3 mt-lg-0 mt-5">

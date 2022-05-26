@@ -12,7 +12,8 @@ Author URL: http://w3layouts.com
     <title>MINK</title>
     
     <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="logo.ico">
+    <link rel="shortcut icon" href="assets/images/logo.ico">
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
   </head>
@@ -21,11 +22,11 @@ Author URL: http://w3layouts.com
 <header id="site-header" class="fixed-top">
   <div class="container">
       <nav class="navbar navbar-expand-lg stroke px-0">
-        <h1> <a class="navbar-brand" href="index.html">
+        <h1> <a class="navbar-brand" href="index.php">
           <span><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px; padding-right: 5px; padding-bottom: 8px;" /></span> 
           MINK
       </a></h1>  
-      
+
           <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
               data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -36,23 +37,23 @@ Author URL: http://w3layouts.com
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item @@home__active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item @@about__active">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item @@services__active">
-                      <a class="nav-link" href="services.html">Services</a>
+                      <a class="nav-link" href="about.php">About</a>
                   </li>
                   <li class="nav-item active">
-                      <a class="nav-link" href="signform.html">Login/Signup</a>
+                      <a class="nav-link" href="services.php">Services</a>
+                  </li>
+                  <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="signform.php">Login/Signup</a>
                   </li>
                   <!--/search-right-->
                   <div class="search mr-3">
                       <input class="search_box" type="checkbox" id="search_box">
                       <label class="fa fa-search" for="search_box"></label>
                       <div class="search_form">
-                          <form action="error.html" method="GET">
+                          <form action="error.php" method="GET">
                               <input type="text" placeholder="Search"><input type="submit" value="search">
                           </form>
                       </div>
@@ -84,76 +85,80 @@ Author URL: http://w3layouts.com
 <section class="w3l-breadcrumb">
     <div class="container">
         <ul class="breadcrumbs-custom-path">
-            <li><a href="services.html">Services</a></li>
-            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Transfer</li>
+            <li><a href="index.php">Home</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>Services</li>
         </ul>
     </div>
 </section>
-<div class="w3l-contact-info py-5" id="contact">
+<!-- /bottom-grids-->
+<section class="w3l-bottom-grids-6 w3l-services py-5" id="services">
     <div class="container py-lg-5 py-md-4">
-        <div class="title text-center">
-            <h3 class="title-big">Transfer Antar Bank Mudah Tanpa Biaya Admin </h3>
-            <p class="mt-2 mx-lg-5">Dengan langkah yang mudah, membuat transaksi Anda menjadi indah</p>
-        </div>
-        <div class="row">
-            <!-- <div class="col-lg-6">
+        <h6 class="title-small text-center">Layanan Kami</h6>
+        <h3 class="title-big mb-md-5 mb-4 text-center">Daftar Layanan Terbaik dari Mini Bank</h3>
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            <div class="col-lg-4 col-md-6 grids-feature">
+                <div class="area-box">
+                    <span class="fa fa-dollar mt-0"></span>
+                    <h4><a href="transfer.php" class="title-head">Transfer</a></h4>
+                    <p class="">Terdapat layanan transaksi transfer ke rekening sendiri, sesama, antar bank dan Virtual Account Billing.</p>
+                </div>
             </div>
-            <div class="align-self mt-lg-0 mt-md-5 mt-4">
-            </div> -->
-        </div>
-        <div class="row mt-5">
-            <div class="col-lg-6 form-inner-cont mt-lg-0 mt-sm-5 mt-4">
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-                    <!-- <h4><strong>Transfer</strong></h4> -->
-                    <div class="form-input">
-                        <input type="text" name="Nomor Kartu" id="w3lName" placeholder="Nomor Kartu">
-                    </div>
-                    <div class="form-input">
-                        <input type="password" name="PIN" id="w3lSender" placeholder="PIN"
-                            required="">
-                    </div>
-                    <div class="form-input">
-                        <input type="text" name="Rekening Tujuan" id="RekeningTujuan" placeholder="Rekening Tujuan">
-                    </div>
-                    <div class="form-input">
-                        <input type="text"  name="Jumlah Transfer" id="broker_fees" placeholder="Jumlah Transfer - Minimal Rp 10.000" required="required">
-                    </div>
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-style btn-primary">Transfer</button>
-                    </div>
-                </form>
+            <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+                <div class="area-box">
+                    <span class="fa fa-credit-card mt-0"></span>
+                    <h4><a href="gantipin.php" class="title-head">Ganti PIN</a></h4>
+                    <p class="">Terdapat layanan penggantian PIN untuk menjaga privasi dan keamanan Anda dalam melakukan transaksi.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+                <div class="area-box">
+                    <span class="fa fa-money mt-0"></span>
+                    <h4><a href="ceksaldo.php" class="title-head">Cek Saldo</a></h4>
+                    <p class="">Terdapat layanan untuk mengecek jumlah saldo (uang) yang masih tersisa pada tabungan Anda saat ini.</p>
+                </div>
             </div>
         </div>
     </div>
+</section>
+<!-- //bottom-grids-->
+<!-- middle -->
+<div class="middle py-5" id="call">
+    <div class="container py-lg-3">
+        <div class="welcome-left text-center py-md-5 py-3">
+            <h3 class="title-big">Apakah Masih Ada Pertanyaan?</h3>
+            <h3 class="mt-4">Silahkan Hubungi Kami Di : <a href="tel:+62 877 3461 4227">+62 877 3461 4227</a> </h3>
+            <p class="mt-4">Apabila Anda menghubungi nomor yang tertera, Anda akan dikenakan biaya normal.</p>
+            <a href="mailto:minibank.id@support.com" class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2">Hubungi Kami</a>
+        </div>
+    </div>
 </div>
+<!-- //middle -->
  <!-- footer -->
-
-<section class="w3l-footer-29-main">
+ <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
     <div class="container py-lg-4">
       <div class="row footer-top-29">
         <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pr-lg-5">
           <div class="footer-logo mb-4">
-            <a class="navbar-brand" href="#index.html"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
+            <a class="navbar-brand" href="#index.php"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
           </div>
-          <p>Kami adalah lembaga keuangan terkemuka yang menyediakan layanan perbankan berskala nasional berkualitas tinggi. Kesuksesan kami
-            terwujud berkat dukungan dari pelanggan setia kami. Kami menyediakan layanan yang dapat diandalkan untuk Anda.</p>
+          <p>Kami adalah lembaga keuangan terkemuka yang menyediakan layanan perbankan berskala nasional berkualitas tinggi. Kesuksesan kami terwujud berkat dukungan dari pelanggan setia kami. Kami menyediakan layanan yang dapat diandalkan untuk Anda.</p>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-5 col-5 footer-list-29 footer-2 mt-md-0 mt-5">
 
           <ul>
             <h6 class="footer-title-29">Quick Links</h6>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.php">About Us</a></li>
             <!-- <li><a href="#blog"> Blog posts</a></li>
             <li><a href="#pricing"> Pricing plans</a></li> -->
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="contact.php">Contact us</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-7 col-7 footer-list-29 footer-3 mt-lg-0 mt-5">
           <h6 class="footer-title-29">Kantor Pusat</h6>
           <p class="mb-3"> Mini Bank, Jl. Ir. Sutami No. 36, Kentingan, Kec. Jebres, Kota Surakarta, Jawa Tengah - 57126.</p>
-          <p class="mb-2"> <span class="fa fa-phone"></span> <a href="tel:+62 877 3461 4227">+62 877 3461 4227</a></p>
+          <p class="mb-2"> <span class="fa fa-phone"></span> <a href="tel:+1(21) 234 4567">+62 877 3461 4227</a></p>
           <p class="mb-2"><span class="fa fa-envelope-o"></span> <a href="mailto:minibank.id@mail.com">minibank.id@gmail.com</a></p>
           <p><span class="fa fa-support"></span> <a href="mailto:minibank.id@support.com">minibank.id@support.com</a></p>
         </div>
@@ -176,6 +181,35 @@ Author URL: http://w3layouts.com
     <div class="container">
       <p class="copy-footer-29">© 2022 Mini Bank. All rights reserved.</p>
     </div>
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      &#10548;
+    </button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+  </section>
+  <!-- //copyright -->
+</section>
 <!-- //footer -->
 
 <!--  javascripts file here -->

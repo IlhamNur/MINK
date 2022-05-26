@@ -21,10 +21,11 @@ Author URL: http://w3layouts.com
 <header id="site-header" class="fixed-top">
   <div class="container">
       <nav class="navbar navbar-expand-lg stroke px-0">
-        <h1> <a class="navbar-brand" href="index.html">
+        <h1> <a class="navbar-brand" href="index.php">
           <span><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px; padding-right: 5px; padding-bottom: 8px;" /></span> 
           MINK
       </a></h1>  
+      
           <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
               data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -35,23 +36,23 @@ Author URL: http://w3layouts.com
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item @@home__active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item @@about__active">
-                      <a class="nav-link" href="about.html">About</a>
+                      <a class="nav-link" href="about.php">About</a>
                   </li>
                   <li class="nav-item @@services__active">
-                      <a class="nav-link" href="services.html">Services</a>
+                      <a class="nav-link" href="services.php">Services</a>
                   </li>
                   <li class="nav-item active">
-                      <a class="nav-link" href="signform.html">Login/Signup</a>
+                      <a class="nav-link" href="signform.php">Login/Signup</a>
                   </li>
                   <!--/search-right-->
                   <div class="search mr-3">
                       <input class="search_box" type="checkbox" id="search_box">
                       <label class="fa fa-search" for="search_box"></label>
                       <div class="search_form">
-                          <form action="error.html" method="GET">
+                          <form action="error.php" method="GET">
                               <input type="text" placeholder="Search"><input type="submit" value="search">
                           </form>
                       </div>
@@ -83,16 +84,16 @@ Author URL: http://w3layouts.com
 <section class="w3l-breadcrumb">
     <div class="container">
         <ul class="breadcrumbs-custom-path">
-            <li><a href="services.html">Services</a></li>
-            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Cek Saldo</li>
+            <li><a href="services.php">Services</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Transfer</li>
         </ul>
     </div>
 </section>
 <div class="w3l-contact-info py-5" id="contact">
     <div class="container py-lg-5 py-md-4">
         <div class="title text-center">
-            <h3 class="title-big">Cek Saldo Anda Dimana Saja Kapan Saja </h3>
-            <p class="mt-2 mx-lg-5">Kini mengecek saldo semudah membalikkan telapak tangan</p>
+            <h3 class="title-big">Transfer Antar Bank Mudah Tanpa Biaya Admin </h3>
+            <p class="mt-2 mx-lg-5">Dengan langkah yang mudah, membuat transaksi Anda menjadi indah</p>
         </div>
         <div class="row">
             <!-- <div class="col-lg-6">
@@ -103,16 +104,22 @@ Author URL: http://w3layouts.com
         <div class="row mt-5">
             <div class="col-lg-6 form-inner-cont mt-lg-0 mt-sm-5 mt-4">
                 <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-                    <!-- <h4><strong>Cek Saldo</strong></h4> -->
+                    <!-- <h4><strong>Transfer</strong></h4> -->
                     <div class="form-input">
                         <input type="text" name="Nomor Kartu" id="w3lName" placeholder="Nomor Kartu">
                     </div>
                     <div class="form-input">
                         <input type="password" name="PIN" id="w3lSender" placeholder="PIN"
                             required="">
-                    </div> 
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="Rekening Tujuan" id="RekeningTujuan" placeholder="Rekening Tujuan">
+                    </div>
+                    <div class="form-input">
+                        <input type="text"  name="Jumlah Transfer" id="broker_fees" placeholder="Jumlah Transfer - Minimal Rp 10.000" required="required">
+                    </div>
                     <div class="text-right">
-                        <button type="submit" class="btn btn-style btn-primary">Cek Saldo</button>
+                        <button type="submit" class="btn btn-style btn-primary">Transfer</button>
                     </div>
                 </form>
             </div>
@@ -120,13 +127,14 @@ Author URL: http://w3layouts.com
     </div>
 </div>
  <!-- footer -->
+
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
     <div class="container py-lg-4">
       <div class="row footer-top-29">
         <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pr-lg-5">
           <div class="footer-logo mb-4">
-            <a class="navbar-brand" href="#index.html"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
+            <a class="navbar-brand" href="#index.php"><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;"/> MINK</a>
           </div>
           <p>Kami adalah lembaga keuangan terkemuka yang menyediakan layanan perbankan berskala nasional berkualitas tinggi. Kesuksesan kami
             terwujud berkat dukungan dari pelanggan setia kami. Kami menyediakan layanan yang dapat diandalkan untuk Anda.</p>
@@ -135,11 +143,11 @@ Author URL: http://w3layouts.com
 
           <ul>
             <h6 class="footer-title-29">Quick Links</h6>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.php">About Us</a></li>
             <!-- <li><a href="#blog"> Blog posts</a></li>
             <li><a href="#pricing"> Pricing plans</a></li> -->
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="contact.php">Contact us</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-7 col-7 footer-list-29 footer-3 mt-lg-0 mt-5">
