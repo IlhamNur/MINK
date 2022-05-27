@@ -26,7 +26,7 @@ if(mysqli_num_rows($result) === 1) {
         $_SESSION['email'] = $row['email'];
         $_SESSION['name'] = $row['name'];
         $_SESSION['id'] = $row['id'];
-        header("Location: dash.php");
+        header("Location: index.php");
         exit();
     }
 }

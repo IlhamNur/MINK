@@ -1,3 +1,202 @@
+<?php
+session_start();
+
+if(isset($_SESSION['id']) && isset($_SESSION['email'])) { ?>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MINK - Home</title>
+    
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.ico">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+  </head>
+  <body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke px-0">
+          <h1> <a class="navbar-brand" href="index.php">
+                  <span><img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px; padding-right: 5px; padding-bottom: 8px;" /></span> 
+                  MINK
+              </a></h1>  
+              
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="about.php">About</a>
+                  </li>
+                  <li class="nav-item @@services__active">
+                      <a class="nav-link" href="services.php">Services</a>
+                  </li>
+                  <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="logout.php">Logout</a>
+                  </li>
+                  <!--/search-right-->
+                  <div class="search mr-3">
+                      <input class="search_box" type="checkbox" id="search_box">
+                      <label class="fa fa-search" for="search_box"></label>
+                      <div class="search_form">
+                          <form action="error.php" method="GET">
+                              <input type="text" placeholder="Search"><input type="submit" value="search">
+                          </form>
+                      </div>
+                  </div>
+                  <!--//search-right-->
+              </ul>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!--/header-->
+<!-- main-slider -->
+<section class="w3l-main-slider" id="home">
+  <!-- <div class="Dashboard1">
+      <h1>Halo Username, Selamat Datang</h1>
+      <div class="saldouser">                              
+        Saldo <input type="password" value="10.000.000" id="myInput">
+        <input type="checkbox" onclick="showPass()"> Show Password
+      </div>
+  </div> -->
+    <div class="companies20-content">
+        <div class="owl-one owl-carousel owl-theme">
+            <div class="item">
+                <li>
+                    <div class="slider-info banner-view bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 banner-info-bg">
+                                        <h5>Halo <?php echo $_SESSION['name']; ?>, Selamat Datang </h5>
+                                        <div class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2">                              
+                                            Sisa saldo anda adalah Rp 10.0000.000
+                                        </div>
+                                        <!-- <p class="mt-md-4 mt-3">MINK (Mini Bank) adalah bank swasta yang didirikan pada tahun 2022.
+                                            Menyediakan segala layanan perbankan untuk memuaskan para pelanggan.
+                                        </p>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in </a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">About Us</a> -->
+                                    </div>
+                                    <!-- <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
+                                        <img src="assets/images/card1.png" alt="img"
+                                            class="img-fluid radius-image-curve" />
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <!-- <div class="item">
+                <li>
+                    <div class="slider-info  banner-view banner-top1 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 banner-info-bg">
+                                        <h5>Transfer kemanapun</h5>
+                                        <p class="mt-md-4 mt-3"> MINK memudahkan kalian untuk melakukan transfer kemanapun dan kapanpun.</p>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">About Us</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
+                                        <img src="assets/images/card2.png" alt="img"
+                                            class="img-fluid radius-image-curve" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="item">
+                <li>
+                    <div class="slider-info banner-view banner-top2 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 banner-info-bg">
+                                        <h5>Kustomisasi akunmu </h5>
+                                        <p class="mt-md-4 mt-3">Log in ke akun anda untuk mengubah username maupun pin</p>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">About Us</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
+                                        <img src="assets/images/card3.png" alt="img"
+                                            class="img-fluid radius-image-curve" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="item">
+                <li>
+                    <div class="slider-info banner-view banner-top3 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 banner-info-bg">
+                                        <h5>Layanan Servis </h5>
+                                        <p class="mt-md-4 mt-3">Melalui Layanan MINK Call 357681, pengguna diberi 
+                                            kemudahan mendapatkan informasi, melakukan transaksi dan memperoleh solusi 
+                                            digital atas setiap permasalahan.
+                                        </p>
+                                        <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="signform.php">Sign in</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.php">Read More</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 img offset-lg-1 mt-lg-0 mt-4">
+                                        <img src="assets/images/card4.png" alt="img"
+                                            class="img-fluid radius-image-curve" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!-- /main-slider -->
+<?php }
+else { ?>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -181,6 +380,8 @@ Author URL: http://w3layouts.com
     </div>
 </section>
 <!-- /main-slider -->
+<?php } ?>
+
 <!-- home page block1 -->
 <section id="about" class="home-services pt-lg-0">
     <div class="container">
@@ -762,6 +963,18 @@ Author URL: http://w3layouts.com
 <!--//MENU-JS-->
 
 <script src="assets/js/bootstrap.min.js"></script><!-- //bootstrap js -->
+
+<script>
+
+function showPass() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 </body>
 
 </html>
